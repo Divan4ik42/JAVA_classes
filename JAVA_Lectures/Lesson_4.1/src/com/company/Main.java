@@ -25,11 +25,11 @@ public class Main {
 
 
         for (int i = 0; i < wordsArray.length; i++) {
-            /*System.out.print(wordsArray[i].length()+ " ");*/
+            /*System.out.print(wordsArray[i].length() + " ");*/
 
 
                                                     //певвая буква в слове "а"
-            if ( (wordsArray[i].length() >= 3) && (wordsArray[i].charAt(0) == 'a' ) ) { // код определяет условие что 3 символа и начинается на "а"(а есло а .charAt() поставить 3 - то это будет условие 3 буквы в слове
+            if ( (wordsArray[i].length() >= 3) && ( (wordsArray[i].charAt(0) == 'b' ) || (wordsArray[i].charAt(0) == 'a' ))) { // код определяет условие что 3 символа и начинается на "а"(а есло а .charAt() поставить 3 - то это будет условие 3 буквы в слове
 
                 System.out.print(i + ". ");
                 System.out.println(wordsArray[i]);
