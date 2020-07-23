@@ -34,8 +34,9 @@ public class Main {
                 System.out.print(i + ". ");
                 System.out.println(wordsArray[i]);
 
-
             }       //  слово под [i] такимтом номером
+
+            // check
 
 
         }
