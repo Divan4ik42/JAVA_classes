@@ -35,5 +35,26 @@ public class Main {
 
         int areaR1 = r1.getArea();
         System.out.println(areaR1);
+
+        rectangle r2 = new rectangle(5,3);
+        rectangle r3 = new rectangle(2,8);
+        int areaR2 = r2.getArea();
+        int areaR3 = r3.getArea();
+        System.out.println(areaR2);
+        System.out.println(areaR3);
+
+        int perimetrR1 = r1.getPerimetr();
+        System.out.println(perimetrR1);
+        int perimetrR2 = r2.getPerimetr();
+        System.out.println(perimetrR2);
+        int perimetrR3 = r3.getPerimetr();
+        System.out.println(perimetrR3);
+
+        //мі хотим в ректангле R2 увеличить длинну на 3 и уменшить ширину на 1. ЄТО ДЕЛАЕТСЯ с помощью SETTERA
+        r2.setLength(8);
+        r2.setWidth(2);
+        System.out.println(r2.getArea());
+
+
     }
 }
