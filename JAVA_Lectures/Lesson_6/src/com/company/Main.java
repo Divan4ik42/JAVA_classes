@@ -56,5 +56,14 @@ public class Main {
         System.out.println(r2.getArea());
 
 
+        System.out.println(r2.toString());
+
+        rectangle r4 = new rectangle();
+        r4.setWidth(5);
+        r4.setLength(6);
+
+        System.out.println(r4.toString());
+
+
     }
 }

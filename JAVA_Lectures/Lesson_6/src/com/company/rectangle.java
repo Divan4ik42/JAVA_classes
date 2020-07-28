@@ -8,7 +8,10 @@ public class rectangle {
         this.length = length;
         this.width = width;
     }
-
+//--------------
+    public rectangle() {
+    }
+//----------------
     public int getLength() {
         return length;
     }
@@ -32,5 +35,13 @@ public class rectangle {
         return (length + width) * 2;
 
     }
-
+    //GENERATE - to string
+    @Override
+    public String toString() {
+        return "rectangle{" +
+                "length=" + length +
+                ", width=" + width +
+                ", area=" + getArea() +
+                '}';
+    }
 }
