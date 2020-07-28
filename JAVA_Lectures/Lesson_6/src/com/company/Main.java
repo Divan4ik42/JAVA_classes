@@ -23,12 +23,17 @@ public class Main {
         Integer numberInt = Integer.valueOf(value);
         System.out.println("конверт текст на цифрі = " + numberInt);
 
+        // Императивное прагромирование
+        // найти площядь прямоугольника длинной 3 см и шириной 4 см
 
+        int length = 3;
+        int width = 4;
+        int area = length * width;
+        System.out.println(area);
 
+        rectangle r1 = new rectangle(3,4);
 
-
-
-
-
+        int areaR1 = r1.getArea();
+        System.out.println(areaR1);
     }
 }
