@@ -105,6 +105,17 @@ public class Student {
 
     @Override
     public String toString() {
+        String buffer2 = "";
+        if (this.isAdult() == true){
+            buffer2 = "Совершеннолетний";
+
+        }
+        else {
+            buffer2 = "СОПЛЯК";
+        }
+
+
+
         String buffer = "";
         if (gender ==true){
             buffer = "male";
@@ -121,7 +132,7 @@ public class Student {
                 ", course= " + course +
                 ", cafedra= " + cafedra +
                 ", date of birth= " + birthDay +
-                ", adult = " + isAdult() +
+                ", adult = " + buffer2 +
                 '}';
     }
 }

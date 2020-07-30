@@ -1,6 +1,7 @@
 package com.company;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.Month;
 import java.time.temporal.ChronoUnit;
 
@@ -21,7 +22,7 @@ public class Main {
         System.out.println(studentAlex.toString());
 
         Student studentOleg = new Student("Oleg","Olegovich",
-                "Olegov",true,2,"IT", LocalDate.of(2000, Month.DECEMBER,2));
+                "Olegov",true,2,"IT", LocalDate.of(2010, Month.DECEMBER,2));
         System.out.println(studentOleg.toString());
         //----------------------------------------------------------------------------------------------------
 
@@ -44,6 +45,12 @@ public class Main {
         System.out.println(myYears);
 
         System.out.println(ChronoUnit.DAYS.between(myBirthDay, LocalDate.now() ));
+
+
+        LocalDateTime time = LocalDateTime.now();
+        System.out.println(time);
+        LocalDateTime time2 = LocalDateTime.of(2020,Month.FEBRUARY,1,12,10,22,350000000);
+        System.out.println(time2);
 
 
     }
