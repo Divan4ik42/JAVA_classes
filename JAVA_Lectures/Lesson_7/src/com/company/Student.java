@@ -1,6 +1,7 @@
 package com.company;
 
 import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
 
 public class Student {
     private String name;
@@ -82,8 +83,23 @@ public class Student {
         this.cafedra = cafedra;
     }
 
+    public LocalDate getBirthDay() {
+        return birthDay;
+    }
+
+    public void setBirthDay(LocalDate birthDay) {
+        this.birthDay = birthDay;
+    }
+
     public boolean isAdult(){
-        return true;
+        long age = ChronoUnit.YEARS.between(this.getBirthDay(), LocalDate.now()); // если поменять местами - ТО ВІДАСТ ОТРИЦАТЕЛЬНОЕ ЗНАЧЕНИЕ и как результат відаст ФОЛС в
+        System.out.println(age);
+        if (age >=18){
+            return true;
+            
+        }
+        else return false;
+        /*return true;*/
 
     }
 
@@ -104,7 +120,8 @@ public class Student {
                 ", gender= " + buffer +
                 ", course= " + course +
                 ", cafedra= " + cafedra +
-                "date of birth= " + birthDay +
+                ", date of birth= " + birthDay +
+                ", adult = " + isAdult() +
                 '}';
     }
 }
